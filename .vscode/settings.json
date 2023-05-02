@@ -1,0 +1,8 @@
+{
+    "python.analysis.typeCheckingMode": "off",
+    "cSpell.words": [
+        "DSPAM",
+        "tupla",
+        "typer"
+    ]
+}

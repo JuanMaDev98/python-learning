@@ -1,0 +1,12 @@
+"Life is a journey that we all must undertake. 
+Along the way we will see both beauty and sorrow, 
+experience love and loss, and encounter countless 
+challenges that test our character. But with determination 
+and perseverance, we can overcome any obstacle and find 
+meaning in the struggles. May your journey be one of growth 
+and fulfillment."
+
+apple: fruit
+banana: fruit
+avocado: fruit
+berry: fruit
