@@ -1,8 +1,5 @@
 import csv
 
-
-import csv
-
 class Item:
     pay_rate = 0.8 # The pay rate after 20% discount
     all = []
@@ -13,14 +10,21 @@ class Item:
         assert quantity >= 0, f"Quantity {quantity} can't be a negative value"
 
         # Assign properties
-        self.name = name
+        self.__name = name
         self.price = price
         self.quantity = quantity
 
         # Actions to execute
         Item.all.append(self)
 
-
+    @property #Property decorator = Read Only Attribute
+    def name(self):
+        return self.__name
+    
+    @name.setter
+    def name(self, value):
+        self.__name = value
+        
     def calculate_total_price(self): # Calculate the total price of all of this items in stock
         return self.price * self.quantity
 
@@ -41,7 +45,7 @@ class Item:
             )
 
     @staticmethod
-    def is_integer(num):
+    def is_integer(num): 
         if isinstance(num, float):
             return num.is_integer()
         elif isinstance(num, int):
@@ -53,23 +57,13 @@ class Item:
     def __repr__(self): # Magic Method for representation of the items
         return f"{self.__class__.__name__}('{self.name}', {self.price}, {self.quantity})"
 
-class Phone(Item):
-    def __init__(self, name: str, price: float, quantity=0, broken_phones = 0):
-        # Call to super function to have acces to all attributes / Methods
-        super().__init__(
-            name, price, quantity
-        )
 
-        # Run validations
-        assert broken_phones >= 0, f"Broken phones {broken_phones} can't be a negative value"
 
-        # Assign properties
-        self.broken_phones = broken_phones
 
-    pass
 
-phone1 = Phone("jscPhone10", 500, 5, 1)
-phone2 = Phone("jscPhone10", 500, 5, 1)
 
-print(Item.all)
+
+
+
+
 
