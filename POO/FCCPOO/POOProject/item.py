@@ -11,7 +11,7 @@ class Item:
 
         # Assign properties
         self.__name = name
-        self.price = price
+        self.__price = price
         self.quantity = quantity
 
         # Actions to execute
@@ -21,15 +21,29 @@ class Item:
     def name(self):
         return self.__name
     
-    @name.setter
-    def name(self, value):
-        self.__name = value
-        
+    @property 
+    def price(self):
+        return self.__price
+    
+    @price.setter #setter para cambiar el valor de una propiedad privada
+    def price(self, value: int):
+        if value > 0:
+            self.__price = value
+    
     def calculate_total_price(self): # Calculate the total price of all of this items in stock
         return self.price * self.quantity
 
     def apply_discount(self):
-        self.price = self.price * self.pay_rate
+        self.__price = self.__price * self.pay_rate
+    
+    def apply_increment(self, increment_value):
+        self.__price = self.__price + self.__price * increment_value 
+            
+    @name.setter #setter para cambiar el valor de una propiedad privada
+    def name(self, value):
+        self.__name = value
+        
+
 
     @classmethod   # Decorator que Declara que el proximo metodo es de la clase, no del objeto
     def instantiate_from_csv(cls):  # Parametro cls pasa la clase como parametro a los metodos de clase

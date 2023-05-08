@@ -15,7 +15,10 @@ class Phone(Item):
 
     pass
 
-item1 = Item("MyItem", 750)
-item1.name = "OtherItem" 
-print(item1.name)
+item1 = Item("MyItem", 1000, 1)
+
+print(item1.price)
+item1.apply_increment(0.2)
+
+print(item1)
 
