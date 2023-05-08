@@ -26,7 +26,7 @@ class Animal:
     
     @classmethod
     def instantiate_from_csv(cls):
-        with open("objects.csv") as x:
+        with open("python-learning\POO\objects.csv") as x:
             items = list(csv.DictReader(x))
         
         for item in items:
@@ -39,9 +39,12 @@ class Animal:
     pass
 
 
+
+
 Animal.instantiate_from_csv()
 
-print(Animal.all_animals)
+for i in Animal.all_animals:
+    print(i)
 
 
 
