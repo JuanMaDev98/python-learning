@@ -1,0 +1,15 @@
+Big O(1) -> Constant Function -> Excellent
+Big O(log n) -> Logarithmic Function -> Excellent
+Big O(n) -> Linear Function -> Good
+Big O(n log n) -> Linearithmic Function -> Regular
+Big O(n^2) -> Quadratic Function -> Bad
+Big O(n^3) -> Cubic Function -> Bad
+Big O(2^n) -> Exponential Function -> Terrible
+Big O(n!) -> Factorial Function -> Terrible
+
+
+
+O(1) -> una constante como un número natural
+O(log n) ->  
+O(n^2) -> un for dentro de un for
+O(n^3) -> un for dentro de un for dentro de otro for
