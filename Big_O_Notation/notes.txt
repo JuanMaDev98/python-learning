@@ -13,3 +13,4 @@ O(1) -> una constante como un número natural
 O(log n) ->  
 O(n^2) -> un for dentro de un for
 O(n^3) -> un for dentro de un for dentro de otro for
+
