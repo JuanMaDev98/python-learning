@@ -4,5 +4,8 @@
         "DSPAM",
         "tupla",
         "typer"
+    ],
+    "cSpell.ignoreWords": [
+        "enter"
     ]
 }
