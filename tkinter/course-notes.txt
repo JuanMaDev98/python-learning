@@ -16,6 +16,7 @@ root.mainloop()# loop principal donde se ejecuta la ventana
 5- LabelFrame
 6- Radiobutton
 7- Messagebox(showinfo, showwarning, showerror, askquestion, askokcancel, askyesno)
+8- TopLevel
 
 Atributos de los Objetos de TKinter
 
