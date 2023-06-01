@@ -18,6 +18,9 @@ root.mainloop()# loop principal donde se ejecuta la ventana
 7- Messagebox(showinfo, showwarning, showerror, askquestion, askokcancel, askyesno)
 8- TopLevel
 9- filedialog(root.filename = filedialog.askopenfilename("initialdir = "", title = "", filetypes ((), (), ()))
+10- Scale (slider)
+11- Checkbutton
+12- OptionMenu
 
 Atributos de los Objetos de TKinter
 
@@ -49,7 +52,9 @@ Atributos de los Objetos de TKinter
 
 #relief - cambia el "relieve" del boton, las opciones son: FLAT(default), RAISED, SUNKEN, GROOVE, RIDGE
 
-
+*En tkinter se pueden crear variables de tipo int, string o float usando:
+- x = IntVar()
+- y = StringVar()
 
 
 
