@@ -26,21 +26,21 @@ root.mainloop()# loop principal donde se ejecuta la ventana
 
 Atributos de los Objetos de TKinter
 
-#state cambia el estado del boton:
-#1- Disable desactiva la opcion de tocar el boton
+#state cambia el estado del botón:
+#1- Disable desactiva la opcion de tocar el botón
 #2- active lo activa como si le hicieras clic
-#3- normal es el estado por defecto del boton
+#3- normal es el estado por defecto del botón
 
 # padx - aumenta el espacio del padding en el eje X
 # pady - que tu crees...
 
-#command ejecuta la funcion a la que esta igualado cuando le haces click al boton
+#command ejecuta la función a la que esta igualado cuando le haces click al botón
 
-#fg - cambia el color del texto del boton (Foreground)
-#bg - cambia el color de fondo del boton (Background
-#todos los colores en TKinter aceptan ademas de la representacion en string, la hexadecimal
+#fg - cambia el color del texto del botón (Foreground)
+#bg - cambia el color de fondo del botón (Background
+#todos los colores en TKinter aceptan ademas de la representación en string, la hexadecimal
 
-#bd - a�ade un borde a la imagen
+#bd - añade un borde a la imagen
 #width - cambia el ancho del objeto
 #height - cambia el largo del objeto
 
@@ -49,10 +49,10 @@ Atributos de los Objetos de TKinter
 #columnspan cambia la cantidad de columnas que usa el objeto para ocupar como espacio
 #rowspan cambia la cantidad de filas(row) que usa el objeto para ocupar como espacio
 
-#sticky - la imagen se "pega" al polo seleccionado(Norte, Sur, Este, Oeste) o una combinacion de varios (N+O) (usado en grid)
-#anchor - "ancla" el elemento a un polo(Norte, Sur, Este, Oeste), no permite combinacion
+#sticky - la imagen se "pega" al polo seleccionado(Norte, Sur, Este, Oeste) o una combinación de varios (N+O) (usado en grid)
+#anchor - "ancla" el elemento a un polo(Norte, Sur, Este, Oeste), no permite combinación
 
-#relief - cambia el "relieve" del boton, las opciones son: FLAT(default), RAISED, SUNKEN, GROOVE, RIDGE
+#relief - cambia el "relieve" del botón, las opciones son: FLAT(default), RAISED, SUNKEN, GROOVE, RIDGE
 
 *En tkinter se pueden crear variables de tipo int, string o float usando:
 - x = IntVar()
