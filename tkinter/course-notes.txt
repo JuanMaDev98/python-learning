@@ -21,6 +21,8 @@ root.mainloop()# loop principal donde se ejecuta la ventana
 10- Scale (slider)
 11- Checkbutton
 12- OptionMenu
+13- Text
+14- Scrollbar
 
 Atributos de los Objetos de TKinter
 
@@ -38,7 +40,7 @@ Atributos de los Objetos de TKinter
 #bg - cambia el color de fondo del boton (Background
 #todos los colores en TKinter aceptan ademas de la representacion en string, la hexadecimal
 
-#bd - añade un borde a la imagen
+#bd - aï¿½ade un borde a la imagen
 #width - cambia el ancho del objeto
 #height - cambia el largo del objeto
 
