@@ -1,0 +1,26 @@
+C.R.U.D:
+
+-Create
+-Read
+-Update
+-Delete
+
+
+Relational Databases (SQL):
+
+-Son como Excel donde la información se organiza en tablas, donde cada tabla tiene columnas y filas y una key que identifica cada fila
+
+non-Relational (noSQL)
+
+-todas las que no sean como las SQL (almacena Graphs, documentos, etc)
+
+RDBMS: Relational Database Management System
+SQL: Structured Query Language
+
+*Un query es una pregunta que se le hace a la base de datos, usando el lenguaje de SQL para preguntar
+
+*Una primary key se usa para identificar una tabla, algo asi como un ID
+Tipos de primary key:
+
+-foreign key: se ponen para linkear esa row con la de otra tabla, consisten de la primary key de la otra tabla
+-composite key: se usan varias keys juntas para identificar la tabla en el caso de que una sola no garantice la condicion de "unica" de la primary key

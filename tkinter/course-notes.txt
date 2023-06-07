@@ -1,4 +1,4 @@
-En tkinter siempre se definen primero los widgets y luego se muestran en pantalla
+﻿En tkinter siempre se definen primero los widgets y luego se muestran en pantalla
 
 root = Tk() #Inicializo la ventana principal que siempre se le pone el nombre root
 
@@ -58,7 +58,7 @@ Atributos de los Objetos de TKinter
 - x = IntVar()
 - y = StringVar()
 
-
+label.cget("text") - obtiene el valor de cualquier configuracion que se ponga entre los ()
 
 
 
