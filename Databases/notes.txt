@@ -6,7 +6,7 @@ C.R.U.D:
 -Delete
 
 
-Relational Databases (SQL):
+***************************************Relational Databases (SQL)*********************************************
 
 -Son como Excel donde la información se organiza en tablas, donde cada tabla tiene columnas y filas y una key que identifica cada fila
 
@@ -24,3 +24,54 @@ Tipos de primary key:
 
 -foreign key: se ponen para linkear esa row con la de otra tabla, consisten de la primary key de la otra tabla
 -composite key: se usan varias keys juntas para identificar la tabla en el caso de que una sola no garantice la condicion de "unica" de la primary key
+
+*********************************SQL Basics*******************************************************************
+-SQL es como 4 lenguajes en 1:
+
+Data Query Lenguage: para obtiener datos de la base de datos
+Data Definition Language : para crear los moldes de las tablas en que se guardan los datos en la base de datos
+Data Control Language: para controlar el acceso a la base de datos (users, admins, permisions)
+Data Manipulation Lenguaje: para Insertar, Borrar y Editar datos a la base de datos
+
+-Querys:
+
+son un grupo de instrucciones escritas en SQL que le dice al RDBMS que informacion quieres que te devuelva
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
