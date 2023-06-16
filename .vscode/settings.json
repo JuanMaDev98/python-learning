@@ -1,8 +1,21 @@
 {
     "python.analysis.typeCheckingMode": "off",
     "cSpell.words": [
+        "askokcancel",
+        "askopenfilename",
+        "askquestion",
+        "askyesno",
+        "Checkbutton",
         "DSPAM",
+        "filedialog",
+        "initialdir",
+        "linkear",
+        "RDBMS",
+        "showerror",
         "tupla",
         "typer"
+    ],
+    "cSpell.ignoreWords": [
+        "enter"
     ]
 }

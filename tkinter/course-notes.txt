@@ -1,0 +1,69 @@
+﻿En tkinter siempre se definen primero los widgets y luego se muestran en pantalla
+
+root = Tk() #Inicializo la ventana principal que siempre se le pone el nombre root
+
+myLabel = Label(root, text ="Hello World!") # creo un nuevo label en la ventana root
+myLabel.pack() #inserta el label en cualquier slot disponible en la ventana
+
+root.mainloop()# loop principal donde se ejecuta la ventana
+
+-Widgets de TKinter:
+
+1- Label
+2- Button
+3- Entry
+4- Image (ImageTk.PhotoImage(Image.open("url_to_img"))
+5- LabelFrame
+6- Radiobutton
+7- Messagebox(showinfo, showwarning, showerror, askquestion, askokcancel, askyesno)
+8- TopLevel
+9- filedialog(root.filename = filedialog.askopenfilename("initialdir = "", title = "", filetypes ((), (), ()))
+10- Scale (slider)
+11- Checkbutton
+12- OptionMenu
+13- Text
+14- Scrollbar
+
+Atributos de los Objetos de TKinter
+
+#state cambia el estado del botón:
+#1- Disable desactiva la opcion de tocar el botón
+#2- active lo activa como si le hicieras clic
+#3- normal es el estado por defecto del botón
+
+# padx - aumenta el espacio del padding en el eje X
+# pady - que tu crees...
+
+#command ejecuta la función a la que esta igualado cuando le haces click al botón
+
+#fg - cambia el color del texto del botón (Foreground)
+#bg - cambia el color de fondo del botón (Background
+#todos los colores en TKinter aceptan ademas de la representación en string, la hexadecimal
+
+#bd - añade un borde a la imagen
+#width - cambia el ancho del objeto
+#height - cambia el largo del objeto
+
+#relief - 
+
+#columnspan cambia la cantidad de columnas que usa el objeto para ocupar como espacio
+#rowspan cambia la cantidad de filas(row) que usa el objeto para ocupar como espacio
+
+#sticky - la imagen se "pega" al polo seleccionado(Norte, Sur, Este, Oeste) o una combinación de varios (N+O) (usado en grid)
+#anchor - "ancla" el elemento a un polo(Norte, Sur, Este, Oeste), no permite combinación
+
+#relief - cambia el "relieve" del botón, las opciones son: FLAT(default), RAISED, SUNKEN, GROOVE, RIDGE
+
+*En tkinter se pueden crear variables de tipo int, string o float usando:
+- x = IntVar()
+- y = StringVar()
+
+label.cget("text") - obtiene el valor de cualquier configuracion que se ponga entre los ()
+
+
+
+
+
+
+
+
