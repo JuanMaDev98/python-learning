@@ -1,0 +1,66 @@
+1- DATATYPES en SQLite
+
+-NULL -> no existe
+-INTEGER -> un numero entero
+-REAL -> un numero con comas, como un float
+-TEXT -> texto(string)
+-BLOB -> dato guardado "asi mismo", puede ser una imagen, un mp3, etc...
+
+2- Cada dato posee un primary key que se lo da automaticamente SQLite, se usa rowid para obtenerlo
+(Solo en SQLite, en otros SQL hay que darselo uno manualmente)
+
+3- En resumen los querys de SQLite son asi:
+
+-ACCION- from -table- WHERE/ORDER BY 
+
+Donde:
+
+ACCION - puede ser SELECT, UPDATE, DELETE
+table - es el nombre de la tabla a modificar/leer
+WHERE- no es obligatorio, va acompañado de una condicion la cual se evaluara para realizar la ACCION si esta condicion se cumple (como un if) (Acepta OR y AND)
+ORDER BY - Ordena la lista a partir de cierto atributo, se puede ordenar por descenciente o ascendente (DESC o ASC) (ORDER BY -columna- -ASC or DESC-)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
