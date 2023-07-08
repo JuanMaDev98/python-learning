@@ -3,6 +3,7 @@
 # Es usado sobre t-odo para la creación de clases que pueden llevar X cantidad de argumentos
 # como por ejemplo los widgets de tkinter
 def car(**kwargs):
+    """Docstring for this function lol"""
     color = kwargs.get("color", "red")
     speed = kwargs.get("speed", 100)
     brand = kwargs.get("brand", "Ford")
