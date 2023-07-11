@@ -1,0 +1,15 @@
+Data Structures Notes
+
+Hash Table - Dictionary - Hash Map - Associative Array:
+
+- Se basan en parejas key - Value
+- Sus elementos están hasheados para una búsqueda rápida O(1)
+
+
+Algorithm Complexity:
+
+Acceder: O(1)
+Insertar: O(1)
+Eliminar: O(1)
+Reemplazar: O(1)
+Recorrer: O(n)

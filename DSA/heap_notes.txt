@@ -1,0 +1,34 @@
+Data Structures Notes
+
+Graphs:
+
+- Está formado por Nodes o Vertices, conectados por edges entre si
+- Los graphs pueden ser Undirected o Directed:
+    - Undirected: Los vertices se pueden viajar en cualquier direccion sin restricciones
+    - Directed: Son vertices direccionales los cuales puedes viajar solamente en una direccion
+- Un graph se puede representar usando una matriz 2d o una adjacency list (list of linked list)
+
+Terminología de Graphs
+
+-Path: Un grupo de vertices que conecta un grupo de nodos, pueden ser Closed o Simple:
+    - Closed Path: El nodo en que se empieza es donde mismo se termina
+    - Simple Path: es cualquier Path donde un nodo no se repita
+-Loop: Es un vértice que conecta un nodo consigo mismo
+-Degree of node: Número de edges conectando un nodo al resto de nodos, en los Directed Graph pueden ser:
+    - In Degree: # de edges entrantes
+    - Out Degree: # de edges salientes
+- Cicle Graph: Es Graph con un # de nodos igual al # de edges
+- Connected Graph: Es un graph donde desde cualquier nodo del graph puedes llegar a otro, es disconnected
+si hay nodos no accesibles desde otros nodos
+- Complete Graph: Cada nodo del graph esta conectado a cada otro nodo del graph con exactamente un edge
+- Weighted Graph: Cada edge tiene un valor (weight) asignado
+- Simple Graph: No posee Loops o edges paralelos (más de un edge entre nodes)
+
+
+Algorithm Complexity:
+
+Acceder: O(1)
+Insertar: O(1)
+Eliminar: O(V+E)  V- numero de nodos  E- Numero de vertices
+Reemplazar: O(1)
+Recorrer: O(V+E)

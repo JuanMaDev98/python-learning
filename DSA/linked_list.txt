@@ -1,0 +1,21 @@
+Data Structures Notes
+
+Linked List - Doubly Linked List:
+
+- Se guardan en bloques no consecutivos de memoria
+- Colección lineal
+- tiene un tamaño editable
+- No tiene que tener valores iguales
+- no está indexada
+- Cada elemento apunta al próximo elemento (y al anterior en el caso de las Doubly linked list)
+- Cada elemento se llama nodo, los cuales poseen dos partes, los datos guardados y la dirección al próximo nodo
+- El primer nodo se llama head y el último tail
+
+
+Algorithm Complexity:
+
+Acceder: O(n)
+Insertar: O(1)
+Eliminar: O(1)
+Reemplazar: O(1)
+Recorrer: O(n)

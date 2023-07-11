@@ -1,0 +1,15 @@
+Data Structures Notes
+
+Queues:
+
+- Siguen el principio FIFO (First In, First Out)
+- Se guardan en bloques consecutivos de memoria generalmente
+- no están indexados
+
+Algorithm Complexity:
+
+Acceder: O(1)
+Insertar: O(1)
+Eliminar: O(1)
+Reemplazar: O(1)
+Recorrer: O(n)

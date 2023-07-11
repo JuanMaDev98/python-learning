@@ -1,0 +1,16 @@
+Data Structures Notes
+
+Arrays:
+
+- Se guardan en bloques consecutivos de memoria
+- todos sus elementos tienen el mismo tipo
+- tiene un tamaño predefinido
+- los arrays estan indexados
+
+Algorithm Complexity:
+
+Acceder: O(1)
+Insertar: O(n)
+Eliminar: O(n)
+Reemplazar: O(1)
+Recorrer: O(n)

@@ -1,0 +1,15 @@
+Data Structures Notes
+
+Stacks:
+
+- Siguen el principio LIFO (Last In, First Out)
+- Se guardan en bloques consecutivos de memoria generalmente
+- no están indexados
+
+Algorithm Complexity:
+
+Acceder:
+Insertar: O(1)
+Eliminar: O(1)
+Reemplazar: O(1)
+Recorrer: O(n)
