@@ -22,4 +22,11 @@ print(functools.reduce(lambda x, y: x + y, nums))  # 15
 
 print(functools.reduce(lambda x, y: f"{x} - {y}", animals))  # cat - dog - turtle
 
+# Lambdas as key arguments
 
+ids = ["id1", "id4", "id40", "id99", "id10"]  # string sort
+print(sorted(ids))
+
+# Usando lambda como key para organizar la lista, puedo modificar los elementos de la lista antes de ordenarlos, para lograr un orden mas personalizado
+# Muy usado ordenando diccionarios por sus keys o values, etc...
+print(sorted(ids, key=lambda x: int(x[2:])))  # int sort
