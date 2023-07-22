@@ -7,6 +7,8 @@ def my_decorator(func):
 
 # Asi es como se llama un decorador en python, básicamente esta linea ejecuta el código:
 # say_whee = my_decorator(say_whee)
+
+
 @my_decorator
 def say_whee():
     print("Whee!")

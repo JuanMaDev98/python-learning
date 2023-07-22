@@ -1,14 +1,20 @@
-# Para qe un decorador acepte funciones con parámetros es necesario ponerle los argumentos *args y **kwargs, 
-# asi aceptara multiples parámetros, o ninguno de ser necesario
+import functools
 
-def do_twice(func):
-    def wrapper_do_twice(*args, **kwargs):
-        func(*args, **kwargs)
-        func(*args, **kwargs)
-    return wrapper_do_twice
 
-@do_twice
-def scream(text):
-    print(text)
-    
-scream("Nooooo!")
+def repeat(num_times):
+    def decorator_repeat(func):
+        @functools.wraps(func)
+        def wrapper_repeat(*args, **kwargs):
+            for _ in range(num_times):
+                value = func(*args, **kwargs)
+            return value
+        return wrapper_repeat
+    return decorator_repeat
+
+
+@repeat(num_times=4)
+def hello(name):
+    print(f"Hello {name}")
+
+
+hello("Juan")
