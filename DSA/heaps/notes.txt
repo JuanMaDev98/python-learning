@@ -1,0 +1,6 @@
+-Formula para calcular el parent de un nodo:
+parent_index = (i-1) // 2
+
+-Formula para calcular los child de un nodo:
+left_child_index = 2*i + 1
+right_child_index = 2*i + 2
