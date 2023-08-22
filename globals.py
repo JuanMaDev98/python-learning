@@ -52,8 +52,9 @@ def print_globals():
 
 print_globals()
 
-
-
+# La funcion built-in globals(), retorna un diccionario con todas las variables globales y el valor que almacenan
+# Este diccionario se mutable po lo que puedes cambiar los valores de las variables globales y esto se reflejara en
+# el programa
 
 
 
