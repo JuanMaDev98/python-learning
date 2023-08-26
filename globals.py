@@ -23,6 +23,7 @@ a = 10
 b = 20
 c = 30
 
+
 def print_globals():
     print(a, b, c)
     c = 100
@@ -42,6 +43,7 @@ la global c
 
 Si quisieras modificar la variable global desde dentro de un scope local podrias usando la keyword 'global'
 """ 
+
 
 def print_globals():
     global c  # Defino la variable c como global, lo que me permite modificar esta variable globalmente

@@ -1,37 +1,87 @@
-class BinaryTree:
-    def __init__(self):
-        self.root = None
+class TreeNode:
 
-    def insert(self, new_value):
-        # if binary search tree is empty, create a new node and declare it as root
-        if self.root is None:
-            self.root = BinaryTreeNode(new_value)
-            return
+    def __init__(self, value):
+        self.left = None
+        self.right = None
+        self.value = value
 
-        current_node = self.root
-        while True:
-            while new_value < current_node.data:
-                current_node = current_node.left_child
-                if current_node.data is None:
-                    current_node
+    def insert(self, value):
+        if value < self.value:
+            if self.left is None:
+                self.left = TreeNode(value)
             else:
-                # if newValue is greater than value of data in root, add it to right subtree and proceed recursively
-                self.root.rightChild = self.insert(self.root.rightChild, new_value)
+                self.left.insert(value)
+        else:
+            if self.right is None:
+                self.right = TreeNode(value)
+            else:
+                self.right.insert(value)
+
+    def inorder_traversal(self):
+
+        """"Recorre el arbol de menor a mayor (left-bottom to right-top)"""
+        if self.left:
+            self.left.inorder_traversal()
+        print(self.value)
+        if self.right:
+            self.right.inorder_traversal()
+
+    def preorder_traversal(self):
+
+        """"Recorre el arbol de top-left a right-bottom"""
+        print(self.value)
+        if self.left:
+            self.left.inorder_traversal()
+        if self.right:
+            self.right.inorder_traversal()
+
+    def postorder_traversal(self):
+
+        """"Recorre el arbol de right-bottom a top-left """
+        if self.left:
+            self.left.inorder_traversal()
+        if self.right:
+            self.right.inorder_traversal()
+        print(self.value)
+
+    def find(self, value):
+        if value < self.value:
+            if self.left is None:
+                return False
+            else:
+                return self.left.find(value)
+        elif value > self.value:
+            if self.right is None:
+                return False
+            else:
+                return self.right.find(value)
+        else:
+            return True
 
 
-class BinaryTreeNode:
-    def __init__(self, data):
-        self.data = data
-        self.left_child = None
-        self.right_child = None
+tree = TreeNode(10)
+tree.insert(5)
+tree.insert(4)
+tree.insert(2)
+tree.insert(1)
+tree.insert(3)
+tree.insert(22)
+tree.insert(11)
+tree.insert(12)
 
-    def __repr__(self):
-        return str(self.data)
+tree.inorder_traversal()
+print("-"*100)
+tree.preorder_traversal()
+print("-"*100)
+tree.postorder_traversal()
+print("-"*100)
+print(tree.find(666))
+print(tree.find(3))
 
 
-btree = BinaryTree()
-btree.insert(10)
-btree.insert(9)
-btree.insert(11)
-btree.insert(12)
-print(btree)
+
+
+
+
+
+
