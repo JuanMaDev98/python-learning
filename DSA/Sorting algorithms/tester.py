@@ -1,5 +1,7 @@
 from random import randint
 from timeit import repeat
+import timsort_tester
+
 
 def run_sorting_algorithm(algorithm, array):
     # Set up the context and prepare the call to the specified
@@ -19,7 +21,7 @@ def run_sorting_algorithm(algorithm, array):
     print(f"Algorithm: {algorithm}. Minimum execution time: {min(times)}")
     
 
-ARRAY_LENGTH = 100
+ARRAY_LENGTH = 10000
 
 if __name__ == "__main__":
     # Generate an array of `ARRAY_LENGTH` items consisting
@@ -32,8 +34,8 @@ if __name__ == "__main__":
     run_sorting_algorithm(algorithm="bubble_sort", array=array)
     run_sorting_algorithm(algorithm="insertion_sort", array=array)
     run_sorting_algorithm(algorithm="merge_sort", array=array)
-
-
+    run_sorting_algorithm(algorithm="quicksort", array=array)
+    timsort_tester.run_sorting_algorithm(algorithm="timsort", array=array)
 
 
 

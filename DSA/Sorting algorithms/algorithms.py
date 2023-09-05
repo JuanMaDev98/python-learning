@@ -1,11 +1,11 @@
-#bubble_sort----------------------------------------------------------------------------------------------
+# bubble_sort----------------------------------------------------------------------------------------------
 
 def bubble_sort(array):
     n = len(array)
 
     for i in range(n):
-    # Create a flag that will allow the function to
-    # terminate early if there's nothing left to sort
+        # Create a flag that will allow the function to
+        # terminate early if there's nothing left to sort
         already_sorted = True
 
         # Start looking at each item of the list one by one,
@@ -32,6 +32,7 @@ def bubble_sort(array):
     return array
 
 # Insertion Sort-------------------------------------------------------------------------------------------
+
 
 def insertion_sort(array):
     # Loop from the second element of the array until
@@ -63,8 +64,8 @@ def insertion_sort(array):
 
     return array
 
-
 # Merge Sort---------------------------------------------------------------------------------------------
+
 
 def merge(left, right):
     # If the first array is empty, then nothing needs
@@ -106,6 +107,7 @@ def merge(left, right):
 
     return result
 
+
 def merge_sort(array):
     # If the input array contains fewer than two elements,
     # then return it as the result of the function
@@ -120,3 +122,35 @@ def merge_sort(array):
     return merge(
         left=merge_sort(array[:midpoint]),
         right=merge_sort(array[midpoint:]))
+
+# Quicksort------------------------------------------------------------------------------------------
+from random import randint
+
+
+def quicksort(array):
+    # If the input array contains fewer than two elements,
+    # then return it as the result of the function
+    if len(array) < 2:
+        return array
+
+    low, same, high = [], [], []
+
+    # Select your `pivot` element randomly
+    pivot = array[randint(0, len(array) - 1)]
+
+    for item in array:
+        # Elements that are smaller than the `pivot` go to
+        # the `low` list. Elements that are larger than
+        # `pivot` go to the `high` list. Elements that are
+        # equal to `pivot` go to the `same` list.
+        if item < pivot:
+            low.append(item)
+        elif item == pivot:
+            same.append(item)
+        elif item > pivot:
+            high.append(item)
+
+    # The final result combines the sorted `low` list
+    # with the `same` list and the sorted `high` list
+    return quicksort(low) + same + quicksort(high)
+
