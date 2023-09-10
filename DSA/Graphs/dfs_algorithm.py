@@ -23,7 +23,7 @@ class Graph:
         for key in self.m_adj_list.keys():
             print("node", key, ": ", self.m_adj_list[key])
 
-    def dfs(self, start, target, path = [], visited = set()):
+    def dfs(self, start, target, path=[], visited=set()):
         path.append(start)
         visited.add(start)
         if start == target:
@@ -35,6 +35,14 @@ class Graph:
                     return result
         path.pop()
         return None
+
+    def dfs_traversal(self, start, visited=set()):
+        visited.add(start)
+        for neighbour, _ in self.m_adj_list[start]:
+            if neighbour not in visited:
+                self.dfs_traversal(neighbour, visited)
+        return visited
+
 
 def main():
     graph = Graph(5, directed=False)
@@ -50,6 +58,8 @@ def main():
     traversal_path = []
     traversal_path = graph.dfs(0, 3)
     print(traversal_path)
+    print(graph.dfs_traversal(0))
+
 
 if __name__=="__main__":
     main()
